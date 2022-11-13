@@ -5,42 +5,42 @@ using System.Security.Cryptography.X509Certificates;
 namespace Aplicatii_ProblemeLab1
 {
 
-    //class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        //            Ex1 – local
+    class Program
+    {
+        static void Main(string[] args)
+       {
+           //            Ex1 – local
     //        //Scrieti un program care citind de la tastaura cele trei dimensiuni ale unui
     //        //paralelipiped dreptunghic, va afisa volumul lui
     //        //• Google: volumul paralelipipedului dreptunghic
 
 
-    //        Console.WriteLine("Introduceti cele trei dimensiuni ale paralipipedului dreptunghic ! ");
+            Console.WriteLine("Introduceti cele trei dimensiuni ale paralipipedului dreptunghic ! ");
 
 
 
-    //        Console.WriteLine("Introduceti prima dimensiune ! ");
-    //        int theFrisDimension = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduceti prima dimensiune ! ");
+            int theFrisDimension = int.Parse(Console.ReadLine());
 
-    //        Console.WriteLine("Introduce-ti urmatoarea dimensiune ! ");
-    //        int theSecondDimension = int.Parse(Console.ReadLine());
+           Console.WriteLine("Introduce-ti urmatoarea dimensiune ! ");
+           int theSecondDimension = int.Parse(Console.ReadLine());
 
-    //        Console.WriteLine("Introduce-ti ultima dimensiune a acesteia ! ");
-    //        int theLastDimension = int.Parse(Console.ReadLine());
+           Console.WriteLine("Introduce-ti ultima dimensiune a acesteia ! ");
+    //     int theLastDimension = int.Parse(Console.ReadLine());
 
-    //        Console.WriteLine("Rezultatul final al volumului unui paralepiped dreptunghic este : " + CalculateVolum(theFrisDimension, theSecondDimension, theLastDimension));
+           Console.WriteLine("Rezultatul final al volumului unui paralepiped dreptunghic este : " + CalculateVolum(theFrisDimension, theSecondDimension, theLastDimension));
 
-    //    }
+       }
 
 
-    //    static int CalculateVolum(int theFirrstDimension, int theSecondDimension, int theLastDimension)
+        static int CalculateVolum(int theFirrstDimension, int theSecondDimension, int theLastDimension)
 
-    //    {
+       {
 
-    //        int resultingRectangularParallelepipedVolume = theFirrstDimension * theSecondDimension * theLastDimension;
-    //        return resultingRectangularParallelepipedVolume;
-    //    }
-    //}
+            int resultingRectangularParallelepipedVolume = theFirrstDimension * theSecondDimension * theLastDimension;
+            return resultingRectangularParallelepipedVolume;
+       }
+    }
 
 
 
@@ -60,52 +60,52 @@ namespace Aplicatii_ProblemeLab1
 
 
 
-//  class Program
-//{
-//    static void Main(string[] args)
-//    {
-//        TextMessageToTheUser();
+  class Program
+{
+   static void Main(string[] args)
+   {
+        TextMessageToTheUser();
 
-//        int theFristValue, theSecondValue, theThirdValue;
-
-
-//        Console.WriteLine("Introduceti o valoare citita de la tastatura ! ");
-//        theFristValue = int.Parse(Console.ReadLine());
-
-//        Console.WriteLine("Introduceti urmatoarea valoare !");
-//        theSecondValue = int.Parse(Console.ReadLine());
-
-//        Console.WriteLine("Introduceti cea dea treaia valoare citita de la tastatura !");
-//        theThirdValue = int.Parse(Console.ReadLine());
+       int theFristValue, theSecondValue, theThirdValue;
 
 
-//        if (theFristValue <= 0 || theSecondValue <= 0 || theThirdValue <= 0 )
-//        {
-//            Console.WriteLine("Valorile introduse de dumneavoastra nu pot fi 0 sau negative, incercati sa introduceti doar valori de tip intregi ! ");
-//        }
+       Console.WriteLine("Introduceti o valoare citita de la tastatura ! ");
+       theFristValue = int.Parse(Console.ReadLine());
+       
+       Console.WriteLine("Introduceti urmatoarea valoare !");
+       theSecondValue = int.Parse(Console.ReadLine());
 
-//        else
-//        {
-//            Console.WriteLine("Rezultatul mediei aritmetice este egala cu :  " + CalculateTheArithmeticMean(theFristValue, theSecondValue, theThirdValue, arithmeticThree));
-//        }
-//    }
+       Console.WriteLine("Introduceti cea dea treaia valoare citita de la tastatura !");
+       theThirdValue = int.Parse(Console.ReadLine());
 
 
-//    static void TextMessageToTheUser()
-//    {
-//        Console.WriteLine("VA RUGAM SA INTRODUCETI VALORILE DORITE ! ");
-//    }
+        if (theFristValue <= 0 || theSecondValue <= 0 || theThirdValue <= 0 )
+        {
+            Console.WriteLine("Valorile introduse de dumneavoastra nu pot fi 0 sau negative, incercati sa introduceti doar valori de tip intregi ! ");
+        }
 
-//    public const double arithmeticThree = 3;
+        else
+        {
+           Console.WriteLine("Rezultatul mediei aritmetice este egala cu :  " + CalculateTheArithmeticMean(theFristValue, theSecondValue, theThirdValue, arithmeticThree));
+        }
+    }
 
-//    static double CalculateTheArithmeticMean(double theFristValue, double theSecondValue, double theThirdValue, double arithmeticThree)
-//    {
+
+    static void TextMessageToTheUser()
+    {
+        Console.WriteLine("VA RUGAM SA INTRODUCETI VALORILE DORITE ! ");
+   }
+
+    public const double arithmeticThree = 3;
+      
+    static double CalculateTheArithmeticMean(double theFristValue, double theSecondValue, double theThirdValue, double arithmeticThree)
+    {
 
 
-//        return (double)((theFristValue + theSecondValue + theThirdValue) / (double)arithmeticThree);
+        return (double)((theFristValue + theSecondValue + theThirdValue) / (double)arithmeticThree);
 
-//    }
-//}
+    }
+}
 
 
 
@@ -125,41 +125,41 @@ namespace Aplicatii_ProblemeLab1
 //tastaura
 // (google: how to get the last digit of a number)
 
-//class Program
-//{
-//    static void Main(string[] args)
-//    {
-//        DisplayTextMessage();
+class Program
+{
+    static void Main(string[] args)
+    {
+        DisplayTextMessage();
 
-//        int firstNumber;
+        int firstNumber;
 
-//        Console.WriteLine("Introduceti u numar intreg de la tastatura in consola !");
-//        firstNumber = int.Parse(Console.ReadLine());
+        Console.WriteLine("Introduceti u numar intreg de la tastatura in consola !");
+        firstNumber = int.Parse(Console.ReadLine());
 
-//        if (firstNumber <= 0)
-//        {
-//            Console.WriteLine("Numarul introdus de dumneavoastra nu poate fi negativ !");
-//        }
-//        else
-//        {
-//            Console.WriteLine("Ultima cifra a numarului introdus in consola este : " + CalculateTheLastDigitOfTheNumber(firstNumber));
-//        }
-//    }
+        if (firstNumber <= 0)
+        {
+           Console.WriteLine("Numarul introdus de dumneavoastra nu poate fi negativ !");
+        }
+        else
+        {
+            Console.WriteLine("Ultima cifra a numarului introdus in consola este : " + CalculateTheLastDigitOfTheNumber(firstNumber));
+        }
+    }
 
-//    static void DisplayTextMessage()
-//    {
-//        Console.WriteLine("Introduceti un numar dorit !");
-//    }
+    static void DisplayTextMessage()
+    {
+        Console.WriteLine("Introduceti un numar dorit !");
+    }
 
-//    static int CalculateTheLastDigitOfTheNumber(int firstNumber)
-//    {
-//        while(firstNumber >= 10)
-//        {
-//            firstNumber = firstNumber % 10;
-//        }
-//           return firstNumber;
-//    }
-//}
+    static int CalculateTheLastDigitOfTheNumber(int firstNumber)
+    {
+        while(firstNumber >= 10)
+        {
+            firstNumber = firstNumber % 10;
+        }
+           return firstNumber;
+    }
+}
 
 //*********************************************************************************************************************************************************************************************************************
 // ex4
@@ -171,41 +171,41 @@ namespace Aplicatii_ProblemeLab1
 //• Daca numarul este 0, va afisa “0”
 
 
-//class Program
-//{
-//    static void Main(string[] args)
-//    {
-//        TextMessegeUser();
+class Program
+{
+    static void Main(string[] args)
+    {
+        TextMessegeUser();
 
-//        Console.WriteLine("Buna, gandestete la un numar la care doreti sa il introduci la consola ! ");
-//        int  number = int.Parse(Console.ReadLine());
+        Console.WriteLine("Buna, gandestete la un numar la care doreti sa il introduci la consola ! ");
+        int  number = int.Parse(Console.ReadLine());
 
-//        Console.Write("Numarul introdus de dumneavoastra in consola are semnul : ");
+        Console.Write("Numarul introdus de dumneavoastra in consola are semnul : ");
 
-//        DisplayNumberSignComparison(number);
-//    }
+        DisplayNumberSignComparison(number);
+    }
 
-//    static void TextMessegeUser()
-//    {
-//        Console.WriteLine("INTRODUCE-TI UN NUMAR DORIT IN CONSOLA ! ");
-//    }
+    static void TextMessegeUser()
+    {
+        Console.WriteLine("INTRODUCE-TI UN NUMAR DORIT IN CONSOLA ! ");
+    }
 
-//    static void  DisplayNumberSignComparison(int number)
-//    {
-//        if(number > 0)
-//        {
-//            Console.WriteLine(" + ==>> este pozitiv ");
-//        }
-//        else if(number < 0)
-//        {
-//            Console.WriteLine(" - ==>> este negativ ");
-//        }
-//        else
-//        {
-//            Console.WriteLine(" 0 ==>> este 0");
-//        }
-//    }
-//}
+    static void  DisplayNumberSignComparison(int number)
+    {
+        if(number > 0)
+        {
+            Console.WriteLine(" + ==>> este pozitiv ");
+        }
+        else if(number < 0)
+        {
+            Console.WriteLine(" - ==>> este negativ ");
+        }
+        else
+        {
+            Console.WriteLine(" 0 ==>> este 0");
+        }
+    }
+}
 // ex 5
 //******************************************************************************************************************************************************************************************
 
