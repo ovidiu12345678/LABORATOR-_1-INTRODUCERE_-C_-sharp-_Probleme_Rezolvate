@@ -209,6 +209,179 @@ class Program
 // ex 5
 //******************************************************************************************************************************************************************************************
 
-//Ex 5
-//Se citesc doua numere de la tastatura, x, y. Scrieti un program care va afisa cele doua valori in ordine crescatoare.
-//• Exemplu: citim ,9,0 Afisam: 0 9 
+
+    //ex 5
+    //* *****************************************************************************************************************************************************************************************
+
+    //    //Ex 5
+    //    //Se citesc doua numere de la tastatura, x, y. Scrieti un program care va afisa cele doua valori in ordine crescatoare.
+    //    //• Exemplu: citim ,9,0 Afisam: 0 9 
+
+       class Program
+        {
+            static void Main(string[] args)
+            {
+                int firstDight, secondDight;
+
+               UserMessageText();
+
+                Console.WriteLine("Introduce-ti prima cifra dorita !");
+                firstDight = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Introduceti ultima cifra dorita !");
+                secondDight = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Numerele alese de dumneavoastra sunt ordonate crescator astfel : {firstDight, secondDight}= ");
+
+                BreederOrders(firstDight, secondDight);
+            }
+
+            static void UserMessageText()
+            {
+                Console.WriteLine("Buna, va rugam sa introduceti cifrele dorite pentru a ordona crescator !");
+            }
+
+           static void BreederOrders(int firstDight, int secodDight)
+            {
+                int order = firstDight;
+
+                if(order > secodDight)
+                {
+                    Console.WriteLine(secodDight);
+                    Console.WriteLine(order);
+                }
+                else
+                {
+                    Console.WriteLine(order);
+                    Console.WriteLine(secodDight);
+                }
+            }
+        }
+
+    //**************************************************************************************************************************************************************
+
+    //    Ex7
+    //  Scrieti un program care va verifica daca un numar citit de la tastatura este par sau
+    //  impar
+    // In cazul in care numarul este par, programul va afisa “par” iar in caz contrar, “impar”.
+    // Google :even and odd number
+
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Se citesc trei numere de la tastatura, x,y,z. Scrieti un program care va afisa cele trei valori in ordine descrescatoare.
+
+        Console.WriteLine("Introduceti primul numar");
+        int firstValue = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduceti al doilea numar");
+        int secondValue = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduceti al treilea numar");
+        int lastValue = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Numerele ordonate");
+        if (firstValue > secondValue)
+        {
+            if (lastValue > firstValue)
+            {
+                
+                Console.WriteLine(lastValue);
+                Console.WriteLine(firstValue);
+                Console.WriteLine(secondValue);
+            }
+            else if (secondValue > lastValue)
+            {
+                
+                Console.WriteLine(firstValue);
+                Console.WriteLine(secondValue);
+                Console.WriteLine(lastValue);
+            }
+            else
+            {
+                
+                Console.WriteLine(firstValue);
+                Console.WriteLine(lastValue);
+                Console.WriteLine(secondValue);
+            }
+        }
+        else
+        {
+            if (lastValue > secondValue)
+            {
+                
+                Console.WriteLine(lastValue);
+                Console.WriteLine(secondValue);
+                Console.WriteLine(firstValue);
+            }
+            else if (firstValue > lastValue)
+            {
+                
+                Console.WriteLine(secondValue);
+                Console.WriteLine(firstValue);
+                Console.WriteLine(lastValue);
+            }
+            else
+            {
+                
+                Console.WriteLine(secondValue);
+                Console.WriteLine(lastValue);
+                Console.WriteLine(firstValue);
+            }
+        }
+    }
+    static void ex7()
+    {
+        // Scrieti un program care va verifica daca un numar citit de la tastatura este par sau impar
+
+        Console.WriteLine("Introduceti numarul ");
+        int numar = int.Parse(Console.ReadLine());
+
+        if (numar % 2 == 0)
+        {
+            Console.WriteLine("par");
+
+        }
+        else
+        {
+            Console.WriteLine("impar");
+        }
+    }
+    static void Ex8()
+    {
+        // Se citesc doua numere de la tastatura, x si y. Scrieti un program care va verifica daca x este divizibil cu y.
+
+        Console.WriteLine("Introduceti primul numar");
+        int firstNumber = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduceti al doilea numar");
+        int secondNumber = int.Parse(Console.ReadLine());
+
+        if (firstNumber % secondNumber == 0)
+        {
+            Console.WriteLine("Divizibile");
+        }
+        else
+        {
+            Console.WriteLine("indivizibile");
+
+        }
+    }
+    static void Ex9()
+    {
+        // aici vom pune rezolvarea pentru exercitiu 9
+    }
+    static void Ex10()
+    {
+        //  Scrieti un program care sa va afisa suma cifrelor ununi numar intreg citit de la tastatura.
+        Console.WriteLine("Introduceti primul numar");
+        int number = int.Parse(Console.ReadLine());
+
+        int sumaCifrelor = number / 10 + number % 10;
+
+        Console.WriteLine("suma cifrelor este " + sumaCifrelor);
+    }
+}
